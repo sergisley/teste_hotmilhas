@@ -1,0 +1,91 @@
+body{
+    background-color: #cfd0d0;
+}
+
+nav{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.main-content{
+    padding: 40px 20px 50px 20px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.caixa-shadow, .dialogo-btn, .dialogo-btn-wrapper, .dialogo-msg {
+    text-align: center
+}
+
+.caixa-shadow {
+    background-color: rgba(0, 0, 0, .6);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 150000
+}
+
+.shadow_container {
+    color: #fff;
+    margin-top: 26%
+}
+
+.shadow_spinner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.cx-dialogo {
+    cursor: default;
+    border-radius: 3px;
+    color: #000;
+    position: fixed;
+    padding: 20px;
+    background: #fff;
+    z-index: 160000;
+    display: block;
+    left: 50%;
+    width: 400px;
+    margin: -50px -200px;
+    top: 35%;
+    -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .98);
+    -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .98);
+    box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .98)
+}
+
+.dialogo-msg {
+    color: #222;
+    padding: 30px
+}
+
+.dialogo-btn {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f4f4f4;
+    color: #333;
+    min-width: 120px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px
+}
+
+.dialogo-btn:hover {
+    background-color: #D5D5D5
+}
+
+.dialogo-btn:active {
+    background-color: #ddd
+}
+
+.dialogo-btn-close {
+    display: block;
+    font-weight: 700;
+    color: #000;
+    float: right;
+    background: #fff;
+    cursor: pointer
+}
