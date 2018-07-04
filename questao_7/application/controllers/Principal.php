@@ -21,6 +21,10 @@ class Principal extends Controller
 
         $data['active_quizzes'] = $this->Quizzes_model->get_active() ;
 
+        if($data['active_quizzes']){
+            $data['active_quizzes'] = array_reverse($data['active_quizzes']);
+        }
+
         $this->load_view('home',$data);
 
     }
@@ -238,6 +242,10 @@ class Principal extends Controller
         $this->load_model('Quizzes_model');
 
         $data['quizzes'] = $this->Quizzes_model->get_all();
+
+        if($data['quizzes']){
+            $data['quizzes'] = array_reverse($data['quizzes']);
+        }
 
         $this->load_view('list_quizzes',$data);
 
